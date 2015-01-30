@@ -1,6 +1,6 @@
 @font-face {
     font-family: Scriptina;
-    src: url("SCRIPTIN.ttf") format("opentype");
+    src: url("../fonts/SCRIPTIN.ttf") format("opentype");
 }
 
 li {
@@ -40,4 +40,19 @@ body > header > div > div.navbar-collapse.collapse.navbar-responsive-collapse > 
 }
 body{
     margin-top: 52px;
+}
+#wrapper > div > div{
+    margin: 0 auto;
+    overflow: hidden;
+}
+body > footer > div > div{
+    margin: 0;
+}
+#wrapper > div > div > div{
+    padding: 1px 10px;
+}
+#imgDisplay{
+    width: 200px;
+    height: auto;
+    min-height: 120px;
 }

@@ -1,1 +1,18 @@
-<h1>Home</h1>
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-6" ng-controller="CarouselCtrl">
+        <div>
+            <carousel interval="interval">
+                <slide ng-repeat="slide in slides" active="slide.active">
+                    <img ng-src="{{slide.image}}" style="margin:auto; height: 350px;">
+
+                    <div class="carousel-caption">
+                        <h4>{{ slide.category }}</h4>
+
+                        <p>{{ slide.name }}</p>
+                    </div>
+                </slide>
+            </carousel>
+        </div>
+    </div>
+</div>

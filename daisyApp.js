@@ -1,1 +1,1 @@
-var daisyApp = angular.module('daisyApp',['ngRoute']);
+var daisyApp = angular.module('daisyApp',['ngRoute','ui.bootstrap']);

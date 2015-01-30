@@ -1,31 +1,30 @@
-<div class="navbar navbar-default navbar-fixed-top">
+<div class="navbar navbar-default navbar-fixed-top" ng-controller="HeaderController">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href title="Daisy's Flowers Home" data-ng-redirect="home">Daisy's Flowers</a>
+        <a class="navbar-brand" href title="Daisy's Flowers Home" ng-click="redirect('home')">Daisy's Flowers</a>
     </div>
     <div class="navbar-collapse collapse navbar-responsive-collapse">
         <ul class="nav navbar-nav">
             <li class="dropdown">
                 <a href class="dropdown-toggle" data-toggle="dropdown" title="Catalog">Каталог<b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                    <li><a href title="Bouquets" data-ng-redirect="bouquet">Букети</a></li>
-                    <li><a href title="Buckets" data-ng-redirect="buckets">Кошници</a></li>
-                    <li><a href title="Pots" data-ng-redirect="pots">Саксийни</a></li>
-                    <li><a href title="Arranging" data-ng-redirect="arranging">Аранжиране</a></li>
+                    <li><a href title="Bouquets" ng-click="redirect('bouquets')">Букети</a></li>
+                    <li><a href title="Buckets" ng-click="redirect('buckets')">Кошници</a></li>
+                    <li><a href title="Pots" ng-click="redirect('pots')">Саксийни</a></li>
+                    <li><a href title="Arranging" ng-click="redirect('arranging')">Аранжиране</a></li>
                     <li class="divider"></li>
-                    <li><a href title="Services">Услуги</a></li>
-                    <li><a href title="Delivery">Доставки</a></li>
+                    <li><a href title="Services" ng-click="redirect('services')">Услуги</a></li>
+                    <li><a href title="Delivery" ng-click="redirect('delivery')">Доставки</a></li>
                 </ul>
             </li>
         </ul>
         <ul class="nav navbar-nav">
-            <li><a href>Доставки</a></li>
-            <li><a href>Контакти</a></li>
-            <li><a href>За нас</a></li>
+            <li><a href ng-click="redirect('contacts')">Контакти</a></li>
+            <li><a href ng-click="redirect('aboutUs')">За нас</a></li>
         </ul>
     </div>
 </div>
