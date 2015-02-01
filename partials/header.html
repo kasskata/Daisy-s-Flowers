@@ -12,17 +12,17 @@
             <li class="dropdown">
                 <a href class="dropdown-toggle" data-toggle="dropdown" title="Catalog">Каталог<b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                    <li><a href title="Bouquets" ng-click="redirect('bouquets')">Букети</a></li>
-                    <li><a href title="Buckets" ng-click="redirect('buckets')">Кошници</a></li>
-                    <li><a href title="Pots" ng-click="redirect('pots')">Саксийни</a></li>
-                    <li><a href title="Arranging" ng-click="redirect('arranging')">Аранжиране</a></li>
+                    <li><a href title="Bouquets" ng-click="where('bouquet')">Букети</a></li>
+                    <li><a href title="Buckets" ng-click="where('bucket')">Кошници</a></li>
+                    <li><a href title="Pots" ng-click="where('pot')">Саксийни</a></li>
+                    <li><a href title="Arranging" ng-click="where('arranging')">Аранжиране</a></li>
                     <li class="divider"></li>
-                    <li><a href title="Services" ng-click="redirect('services')">Услуги</a></li>
-                    <li><a href title="Delivery" ng-click="redirect('delivery')">Доставки</a></li>
+                    <li><a href title="Services" ng-click="where('service')">Услуги</a></li>
                 </ul>
             </li>
         </ul>
         <ul class="nav navbar-nav">
+            <li><a href title="Delivery" ng-click="redirect('delivery')">Доставки</a></li>
             <li><a href ng-click="redirect('contacts')">Контакти</a></li>
             <li><a href ng-click="redirect('aboutUs')">За нас</a></li>
         </ul>

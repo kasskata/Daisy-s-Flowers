@@ -4,29 +4,9 @@ daisyApp.config(function ($locationProvider, $routeProvider) {
         {
             templateUrl: 'partials/home.html'
         })
-        .when('/arranging',
+        .when('/posters',
         {
-            templateUrl: 'partials/arranging.html'
-        })
-        .when('/bouquets',
-        {
-            templateUrl: 'partials/bouquets.html'
-        })
-        .when('/buckets',
-        {
-            templateUrl: 'partials/buckets.html'
-        })
-        .when('/delivery',
-        {
-            templateUrl: 'partials/delivery.html'
-        })
-        .when('/pots',
-        {
-            templateUrl: 'partials/pots.html'
-        })
-        .when('/services',
-        {
-            templateUrl: 'partials/services.html'
+            templateUrl: 'partials/posters.html'
         })
         .when('/contacts',
         {

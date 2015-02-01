@@ -31,6 +31,12 @@ daisyApp.factory('requester', function requester($http) {
         );
     }
 
+    function addCarousel(data, success, error) {
+        data['ACL'] = ACL;
+
+        request("POST", "classes/Carousel", data, success, error);
+    }
+
     function addPoster(data, success, error) {
         data['ACL'] = ACL;
 
@@ -38,15 +44,19 @@ daisyApp.factory('requester', function requester($http) {
     }
 
     function getPosters(query, success, error) {
-        request("GET", "classes/Poster", query, success, error);
+        request("GET", "classes/Poster", null, success, error, query);
     }
 
     function getCategories(success, error) {
-        request("GET", "classes/Category",null, success, error);
+        request("GET", "classes/Category", null, success, error);
     }
 
     function login(data, success, error) {
         request("GET", "login", null, success, error, data);
+    }
+
+    function getCarousel(query, success, error) {
+        request("GET", "classes/Carousel", query, success, error);
     }
 
     return{
@@ -55,6 +65,10 @@ daisyApp.factory('requester', function requester($http) {
         login: login,
 
         addPoster: addPoster,
-        getPosters: getPosters
+        getPosters: getPosters,
+
+        addCarousel: addCarousel,
+        getCarousel: getCarousel
+
     }
 });
